@@ -27,7 +27,8 @@ namespace kalendar_with_marks
             this.Visible = false;
             DateObserver dateObs = (DateObserver)Application.OpenForms["DateObserver"];
             dateObs.Visible = true;
-            dateObs.RenderTasks(e.End);
+            //dateObs.RenderTasks(e.End);
+            //ablac
         }
 
         private void btnAddCateg_Click(object sender, EventArgs e)
@@ -46,7 +47,6 @@ namespace kalendar_with_marks
 
         public void Otrisovwik(string[] risCat)
         {
-
             Panel pn = ((Panel)this.Controls["pnCategories"]);
             Common.RenderFromFile(risCat, pn);
             pnCategories.Refresh();
